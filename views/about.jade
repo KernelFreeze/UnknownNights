@@ -1,0 +1,12 @@
+include mixins
+extends layout
+
+block content
+  //- Navigation var
+  .container
+    +nav("UnknownNigths", "dropdown_menu", "inverse")
+        +nav_item( "/" ) Home
+        +nav_item( "about", "active" ) About
+        +nav_item( "play" ) Play
+   .container
+    p UnknownNigths is a massively multiplayer online role-playing game, that combines the interesting aspects of a role-playing game, with an incredible gameplay in your browser. It is not necessary to download additional programs, and you can access your progress anywhere. It is open source. It's still in alpha stage, if you find any error please report it on GitHub.

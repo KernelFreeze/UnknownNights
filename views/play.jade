@@ -1,14 +1,13 @@
 include mixins
 extends layout
-
+block head
+    script(src='/js/phaser.min.js')
 block content
   //- Navigation var
   .container
     +nav("UnknownNigths", "dropdown_menu", "inverse")
-        +nav_item( "/", "active" ) Home
+        +nav_item( "/" ) Home
         +nav_item( "about" ) About
-        +nav_item( "play" ) Play
+        +nav_item( "play", "active" ) Play
    .container
-    +panel(message, "danger")
-        h2= error.status
-        pre #{error.stack}
+    
