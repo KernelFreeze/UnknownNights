@@ -1,0 +1,13 @@
+include mixins
+extends layout
+
+block content
+  //- Navigation var
+  .container
+    +nav("UnknownNigths", "dropdown_menu", "inverse")
+        +nav_item( "/", "active" ) Home
+        +nav_item( "about" ) About
+        +nav_item( "play" ) Play
+   .container
+    +panel(title): p A online RPG, free, open-source, multi-player and with an amazing history. You'll love it when you try it.
+    p: +button("primary", "play", "large") Play now
