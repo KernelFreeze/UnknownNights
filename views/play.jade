@@ -1,7 +1,9 @@
 include mixins
 extends layout
 block head
-    script(src='/js/phaser.min.js')
+    script(src='/js/phaser.js')
+    script(src='/js/boot.js')
+    script(src='/js/preload.js')
 block content
   //- Navigation var
   .container
@@ -9,5 +11,6 @@ block content
         +nav_item( "/" ) Home
         +nav_item( "about" ) About
         +nav_item( "play", "active" ) Play
-   .container
+   .canvas(style="padding-top: 0px;")
+   script(src='/js/client.js')
     
